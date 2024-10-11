@@ -20,8 +20,9 @@ image:
   # Port exposed through your container to route traffic to it.
   port: 8501
 
-cpu: 2048
-memory: 4096
+cpu: 4096
+memory: 8192
+ platform: linux/x86_64 # See https://aws.github.io/copilot-cli/docs/manifest/lb-web-service/#platform
 count: 1
 storage:
   ephemeral: 100
